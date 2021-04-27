@@ -1,0 +1,32 @@
+program soma_fracionaria_fibonacci;
+
+var i, fib, ult, penult, num, den: integer;
+    soma, soma_n:real;
+
+begin
+    i:=1;
+    num:=1; den:=1; 
+    soma_n:= 0;
+    penult:=1; ult:=1;
+    
+    while i <= 5 do
+    begin
+        soma:= num/den;
+        soma_n:= soma_n + soma;
+        
+        fib:= penult + ult; // descobre-se o novo numerador pela soma dos dois N anteriores da sequência.
+        num:= fib; // atribui o novo número ao numerador.
+        
+        penult:= ult; // o penúltimo numero recebido recebe o último para que dê sequência a soma.
+        ult:= fib; // o último recebe a soma dos dois anteriores;
+        
+        fib:= penult + ult; // descobre-se o novo denominador pela soma dos dois N anteriores da sequência.
+        den:= fib; // atribui o novo número ao denominador.
+        
+        penult:= ult; // o penúltimo numero recebido recebe o último para que dê sequência a soma.
+        ult:= fib; // o último recebe a soma dos dois anteriores;
+        
+        i:=i+1;
+    end;
+    writeln(soma_n:0:2);
+end.

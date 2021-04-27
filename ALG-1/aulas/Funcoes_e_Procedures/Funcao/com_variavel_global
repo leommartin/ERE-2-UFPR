@@ -1,0 +1,1 @@
+nao ha passagem de parametros por copia ou referencia. sao utilizadas variaveis globais, que podem ser utilzada em qualquer lugar do programa.
