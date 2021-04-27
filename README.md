@@ -1,2 +1,2 @@
 # ERE-2
- ERE-2 UFPR
+Conteúdo produzido no 2° período de Ensino Remoto Emergencial da Universidade Federal do Paraná.
